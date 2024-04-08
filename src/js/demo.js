@@ -1,4 +1,5 @@
 'use strict'
+/*
 const MYAPP = {};    // 自定义一个全局变量,其他变量绑定后防止不同JS文件中同名全局变量冲突
 MYAPP.a1 = 'hello, javascript!';
 const PI = '3.14';
@@ -10,8 +11,7 @@ MYAPP.c = `one
 two
 three
 `; // 多行字符串
-// window.alert(a);
-/*
+window.alert(a);
 document.write(let arr_1[3]);
 console.log(b1.length);
 console.log(MYAPP.a1.split(','));
@@ -29,9 +29,6 @@ let i;
 for (i = 0; i < arr_1.length; i++){
     console.log(arr_1[i])
 }
-
- */
-/*
 for(let a of map_1){
     //console.log(a);
 }
@@ -121,7 +118,6 @@ class Cat extends Animal{
         return `Hello, ${this.name}!`
     }
 }
- */
 // 浏览器
 let li = document.getElementById('test-list');
 let arr = ['Swift', 'ANSI C', 'DirectX'];
@@ -131,6 +127,6 @@ for (let i = 0; i < li.children.length; i ++) {
         li.children[i].remove();
     }
 }
+ */
 //表单操作
 let username = document.getElementById('username');
-console.log(username.value);

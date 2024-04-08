@@ -6,16 +6,32 @@
     <title>Front Learning</title>
   </head>
 <body>
-  <form>
-    <label for="username">用户名:</label>
-    <input type="text" id="username" />
-    <br />
+  <!--
+  <ul id="test-list">
+    <li>JavaScript</li>
+    <li>Swift</li>
+    <li>HTML</li>
+    <li>ANSI C</li>
+    <li>CSS</li>
+    <li>DirectX</li>
+  </ul>
+  -->
+  <form id="login" action="/" method="post" enctype="multipart/form-data">
+    <label for="username">用户:</label>
+    <input type="text" id="username" required>
+    <br>
     <label for="password">密码:</label>
-    <input type="password" id="password" />
+    <input type="password" id="password" required>
     <br>
     <label>性别:</label>
-    <br />
-    <input type="submit" value="Submit" />
+    <label for="male">男</label>
+    <input type="radio" id="male" name="gender" value="male" checked>
+    <label for="female">女</label>
+    <input type="radio" id="female" name="gender" value="female" checked>
+    <br>
+    <input type="file">
+    <br>
+    <input type="submit" value="submit" />
   </form>
   <script src="/src/js/demo.js"></script>
 </body>
