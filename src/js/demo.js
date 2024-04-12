@@ -1,4 +1,3 @@
-'use strict'
 /*
 const MYAPP = {};    // 自定义一个全局变量,其他变量绑定后防止不同JS文件中同名全局变量冲突
 MYAPP.a1 = 'hello, javascript!';
@@ -129,4 +128,4 @@ for (let i = 0; i < li.children.length; i ++) {
 }
  */
 //表单操作
-let username = document.getElementById('username');
+let username = document.getElementById('login-title');
