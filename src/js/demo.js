@@ -129,3 +129,17 @@ for (let i = 0; i < li.children.length; i ++) {
  */
 //表单操作
 let username = document.getElementById('login-title');
+
+// Proxy对象
+const obj = {
+  a: 1,
+  b: 2
+};
+
+const objProxy = new Proxy(obj, {
+  get: function (target, key) {
+    console.log(`捕获到对象获取${key}属性的值操作`);
+    return target[key];
+  }
+});
+console.log(objProxy.a);
